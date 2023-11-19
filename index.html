@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="index.js"></script>
+    <title>NEWS</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="header__title">
+        Добро пожаловать на портал технологических новостей
+      </h1>
+    </header>
+    <main class="main container">
+      <div class="main__content">
+        <div class="card">
+          <button class="newws" id="show-modal-btn">Новость 1</button>
+          <dialog class="dialog">
+            <div id="modal-box" style="padding: 1rem">
+              <div class="mood">
+                <video class="video" controls width="350">
+                  <source src="./style/IMG_6395.MP4" type="video/mp4" />
+                </video>
+                <p class="modal__text">
+                  Ультимативный ИИ-редактор фото. Chatdesigner выполнит любую
+                  задачу по вашему запросу — от генерации картинок до внесения
+                  правок из текста. Сервис нарисует задний фон, «переоденет»
+                  человека, сделает дипфейк вашего лица, стилизует картинку,
+                  удалит вотермарки, расширит изображение, изменит, добавит и
+                  переместит любые объекты.
+                </p>
+              </div>
+              <button class="button" id="close-modal-btn">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="card">
+          <button class="newws" id="show-modal-btn2">Новость 2</button>
+          <dialog class="dialog2">
+            <div id="modal-box2" style="padding: 1rem">
+              <div class="mood">
+                <video class="video" controls width="350">
+                  <source src="./style/IMG_4144.MP4" type="video/mp4" />
+                </video>
+                <p class="modal__text">
+                  Появилась нейронка, которая создает код сайта на основе
+                  скриншота страницы — для работы нужен собственный ключ с
+                  доступом к GPT-4 Vision. Создана она на основе GPT-4 Vision:
+                  загружаешь скриншот, а в ответ получаешь HTML/Tailwind CSS
+                  код.
+                </p>
+              </div>
+              <button class="button" id="close-modal-btn2">Close2</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="card">
+          <button class="newws" id="show-modal-btn3">Новость 3</button>
+          <dialog class="dialog3">
+            <div id="modal-box3" style="padding: 1rem">
+              <div class="mood">
+                <img src="./style/new3.jpeg" alt="news3" />
+                <p class="modal__text">
+                  Гении японцы изобрели термопасту с ароматом и вкусом яблока
+                  Называется это чудо Muglis 4G Apple Edition EG4GAP. При
+                  нагревании с вашего компьютера будет издаваться очень приятный
+                  запах, также паста отлично подойдет для адских разгонов
+                  (диапазон температур у неё до 220 ℃) Зачем только ей нужен
+                  вкус производитель не говорит
+                </p>
+              </div>
+              <button class="button" id="close-modal-btn3">Close3</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="card">
+          <button class="newws" id="show-modal-btn4">Новость 4</button>
+          <dialog class="dialog4">
+            <div id="modal-box4" style="padding: 1rem">
+              <div class="mood">
+                <img src="./style/new4.jpeg" alt="news3" />
+                <p class="modal__text">
+                  Трейлре GTA VI покажут 7 декабря! (скорее всего) В этот день
+                  пройдет "Оскар по играм" The Game Awards и Rockstar
+                  засветилась в списке участников вместе с Кодзимой Лучшего
+                  времени для показа трейлера не существует
+                </p>
+              </div>
+              <button class="button" id="close-modal-btn4">Close4</button>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
