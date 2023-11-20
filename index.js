@@ -15,66 +15,66 @@ const closeModalBtn2 = document.getElementById('close-modal-btn2');
 const closeModalBtn3 = document.getElementById('close-modal-btn3');
 const closeModalBtn4 = document.getElementById('close-modal-btn4');
 
-let isModalOpen = false
+let isModalOpen = false;
 
 showModalBtn.addEventListener('click', (e) => {
-  modal.showModal()
-  isModalOpen = true
-  e.stopPropagation()
-})
+  modal.showModal();
+  isModalOpen = true;
+  e.stopPropagation();
+});
 
 showModalBtn2.addEventListener('click', (e) => {
-    modal2.showModal()
-    isModalOpen = true
-    e.stopPropagation()
-  })
+  modal2.showModal();
+  isModalOpen = true;
+  e.stopPropagation();
+});
 
-  showModalBtn3.addEventListener('click', (e) => {
-    modal3.showModal()
-    isModalOpen = true
-    e.stopPropagation()
-  })
+showModalBtn3.addEventListener('click', (e) => {
+  modal3.showModal();
+  isModalOpen = true;
+  e.stopPropagation();
+});
 
-  showModalBtn4.addEventListener('click', (e) => {
-    modal4.showModal()
-    isModalOpen = true
-    e.stopPropagation()
-  })
+showModalBtn4.addEventListener('click', (e) => {
+  modal4.showModal();
+  isModalOpen = true;
+  e.stopPropagation();
+});
 
 closeModalBtn.addEventListener('click', () => {
-  modal.close()
-  isModalOpen = false
-})
+  modal.close();
+  isModalOpen = false;
+});
 
 closeModalBtn2.addEventListener('click', () => {
-    modal2.close()
-    isModalOpen = false
-  })
+  modal2.close();
+  isModalOpen = false;
+});
 
-  closeModalBtn3.addEventListener('click', () => {
-    modal3.close()
-    isModalOpen = false
-  })
+closeModalBtn3.addEventListener('click', () => {
+  modal3.close();
+  isModalOpen = false;
+});
 
-  closeModalBtn4.addEventListener('click', () => {
-    modal4.close()
-    isModalOpen = false
-  })
+closeModalBtn4.addEventListener('click', () => {
+  modal4.close();
+  isModalOpen = false;
+});
 
 document.addEventListener('click', (e) => {
   if (isModalOpen && !modalBox.contains(e.target)) {
-    modal.close()
+    modal.close();
   }
   if (isModalOpen && !modalBox2.contains(e.target)) {
-    modal2.close()
+    modal2.close();
   }
   if (isModalOpen && !modalBox3.contains(e.target)) {
-    modal3.close()
+    modal3.close();
   }
   if (isModalOpen && !modalBox4.contains(e.target)) {
-    modal4.close()
+    modal4.close();
   }
-})
+});
 
 // document.addEventListener('click', (e) => {
 //     if (isModalOpen && !modalBox2.contains(e.target)) {
